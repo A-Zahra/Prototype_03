@@ -23,7 +23,7 @@ public class CreatingJewels : MonoBehaviour
 
         if (GameStats.State == "play" && notStarted == false)
         {
-            InvokeRepeating("createNewJewels", 1f, 7f);
+            InvokeRepeating("createNewJewels", 1f, 4f);
             notStarted = true;
             //Debug.Log("once");
         }
@@ -38,7 +38,7 @@ public class CreatingJewels : MonoBehaviour
                 theJewel.transform.position = new Vector3(i, 15, j);
                   int index = Random.Range(0, 8);
                 theJewel.GetComponent<Renderer>().material = new Material(test[index]);
-                theJewel.GetComponent<Falling>().speed = Random.Range(-0.01f, -0.08f);
+                theJewel.GetComponent<Falling>().speed = Random.Range(-0.03f, -0.06f);
                 containers[cIndex].transform.GetChild(1).gameObject.SetActive(true);
                 containers[cIndex].transform.GetChild(1).gameObject.GetComponent<CollectPoints>().isHit = false;
                 containers[cIndex].transform.GetChild(1).gameObject.GetComponent<CollectPoints>().isOpen= false;

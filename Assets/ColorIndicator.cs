@@ -34,7 +34,7 @@ public class ColorIndicator : MonoBehaviour
     {
         if (GameStats.State == "play" && notStarted ==false)
         {
-            InvokeRepeating("colorChange", 1f, 7f);
+            InvokeRepeating("colorChange", 1f, 4f);
             notStarted = true;
             //Debug.Log("once");
         }
