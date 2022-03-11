@@ -1,6 +1,7 @@
 **Design Hypothesis**
 
-
+Through this prototype and the playtesting sessions coming the week after, I would answer the following question:
+What visual and structural aspects should I consider in the game design process to keep the game engaging and enjoyable?
 
 **Game story**
 
@@ -17,4 +18,5 @@ How did you find the game story/concept?
 Was it hard to play in angular view? would it be better to make the camera view straight top view?
 What was the game difficulty level?
 Did you find anything annoying?
-Do you have any suggestions? what should be the next level?
+Do you have any suggestions? What can be the next level of this game?
+Do you think the color displayed on the screen should always match at least one of the containers' colors? Or it is good as it is now?
