@@ -14,9 +14,9 @@ The color of the jewels that should be collected is displayed every 2 secs. Remo
 
 **Playtest Questions**
 
-How did you find the game story/concept?
-Was it hard to play in angular view? would it be better to make the camera view straight top view?
-What was the game difficulty level?
-Did you find anything annoying?
-Do you have any suggestions? What can be the next level of this game?
-Do you think the color displayed on the screen should always match at least one of the containers' colors? Or it is good as it is now?
+-How did you find the game story/concept?
+-Was it hard to play in angular view? would it be better to make the camera view straight top view?
+-What was the game difficulty level?
+-Did you find anything annoying?
+-Do you have any suggestions? What can be the next level of this game?
+-Do you think the color displayed on the screen should always match at least one of the containers' colors? Or it is good as it is now?
