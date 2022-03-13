@@ -20,3 +20,4 @@ The color of the jewels that should be collected is displayed every 2 secs. Remo
 4. Did you find anything annoying?
 5. Do you have any suggestions? What can be the next level of this game?
 6. Do you think the color displayed on the screen should always match at least one of the containers' colors? Or it is good as it is now?
+7. How many jewels could you collect?
