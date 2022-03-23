@@ -1,6 +1,7 @@
 **Design Hypothesis**
 
-
+Through this prototype and the playtesting sessions coming the week after, I would answer the following question:
+What visual and structural aspects should I consider in the game design process to keep the game engaging and enjoyable?
 
 **Game story**
 
@@ -13,8 +14,10 @@ The color of the jewels that should be collected is displayed every 2 secs. Remo
 
 **Playtest Questions**
 
-How did you find the game story/concept?
-Was it hard to play in angular view? would it be better to make the camera view straight top view?
-What was the game difficulty level?
-Did you find anything annoying?
-Do you have any suggestions? what should be the next level?
+1. How did you find the game story/concept?
+2. Was it hard to play in angular view? Would it be better to make the camera view straight top view?
+3. What was the game difficulty level?
+4. Did you find anything annoying?
+5. Do you have any suggestions? What can be the next level of this game?
+6. Do you think the color displayed on the screen should always match at least one of the containers' colors? Or it is good as it is now?
+7. How many jewels could you collect?
