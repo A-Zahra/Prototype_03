@@ -39,6 +39,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1613345958835862004}
     m_Modifications:
+    - target: {fileID: -8523220302321887695, guid: 0290b0cf5be961e498cbbe8678e5aa77, type: 3}
+      propertyPath: wrongMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: d30b8f8020860b749ba8f61c1d9dc7b4, type: 2}
     - target: {fileID: 971763947076344227, guid: 0290b0cf5be961e498cbbe8678e5aa77, type: 3}
       propertyPath: m_Name
       value: ContainerCap (27)
