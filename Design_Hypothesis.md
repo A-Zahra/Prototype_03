@@ -21,3 +21,21 @@ The color of the jewels that should be collected is displayed every 2 secs. Remo
 5. Do you have any suggestions? What can be the next level of this game?
 6. Do you think the color displayed on the screen should always match at least one of the containers' colors? Or it is good as it is now?
 7. How many jewels could you collect?
+
+
+**Reflection on playtests**
+
+I decided to take a different approach for prototype three. I'd like to see how far I can go with the coding in the Unity environment and to what level my idea is applicable. In prototype three I did my best to make the game mechanics work properly, and the game's visual aspect was my second priority. Fortunately, most of my playtesters liked the game. however, they faced an almost similar problem in finding the connection between the game's visuals and the game's concept/story. 
+
+Therefore for the second iteration, I decided to pay close attention to the comments I received from the playtesters and I tried to refine the errors and the problems they came across as much as possible.
+
+Some of the fundamental changes that I made to this game according to the playtesters' comments are as follows:
+* Improving the environment lighting 
+* Making the colors truly match the screen color
+* Making the target color on the screen bigger
+* Making the colors more distinguishable
+* Making the balls look really like jewels
+* Add a timer
+* Add instructions and game's story inside the game environment
+* adding a start and  game over screen
+* clarifying the game procedure through the game instructions
