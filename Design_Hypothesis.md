@@ -25,9 +25,9 @@ The color of the jewels that should be collected is displayed every 2 secs. Remo
 
 **Reflection on playtests**
 
-I decided to take a different approach for prototype three. I'd like to see how far I can go with the coding in the Unity environment and to what level my idea is applicable. In prototype three I did my best to make the game mechanics work properly, and the game's visual aspect was my second priority. Fortunately, most of my playtesters liked the game. however, they faced an almost similar problem in finding the connection between the game's visuals and the game's concept/story. 
+I decided to take a different approach for prototype three. I'd like to see how far I can go with the coding in the Unity environment and to what level my idea is applicable. In prototype three, I did my best to make the game mechanics work properly, and the game's visual aspect was my second priority. Fortunately, most of my playtesters liked the game. However, they faced an almost similar problem in finding the connection between the game's visuals and the game's concept/story. 
 
-Therefore for the second iteration, I decided to pay close attention to the comments I received from the playtesters and I tried to refine the errors and the problems they came across as much as possible.
+Therefore, for the second iteration, I decided to pay close attention to the comments I received from the playtesters and I tried to refine the errors and the problems they came across as much as possible.
 
 Some of the fundamental changes that I made to this game according to the playtesters' comments are as follows:
 * Improving the environment lighting 
