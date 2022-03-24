@@ -35,7 +35,7 @@ Some of the fundamental changes that I made to this game according to the playte
 * Making the target color on the screen bigger
 * Making the colors more distinguishable
 * Making the balls look really like jewels
-* Add a timer
-* Add instructions and game's story inside the game environment
-* adding a start and  game over screen
-* clarifying the game procedure through the game instructions
+* Adding a timer
+* Adding instructions and game's story inside the game environment
+* Adding a start and  game over screen
+* Clarifying the game procedure through the game instructions
