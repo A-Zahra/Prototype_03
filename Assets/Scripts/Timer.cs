@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (GameStats.State == "play")
         {
