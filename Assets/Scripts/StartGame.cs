@@ -15,7 +15,7 @@ public class StartGame : MonoBehaviour
        
     }
     // Update is called once per frame
-    private void OnGUI()
+    /*private void OnGUI()
     {
         GUIStyle buttonStyle = new GUIStyle();
         buttonStyle.fontSize = Screen.width / 44;
@@ -50,7 +50,7 @@ public class StartGame : MonoBehaviour
        
         GUI.Label(new Rect((float)Screen.width / 1.54f, Screen.height /11, 150, 20), "Jewels Color Guide", myStyle);
 
-        /*
+        
         #if UNITY_EDITOR
         EditorGUI.DrawRect(new Rect((float)Screen.width / 1.18f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.red);
         #endif
@@ -91,9 +91,7 @@ public class StartGame : MonoBehaviour
         #endif
         GUI.Label(new Rect((float)Screen.width / 1.28f, Screen.height / 3, 150, 20), "Yellow", myStyle);
 
-        */
+     
 
-
-
-    }
+    }*/
 }
