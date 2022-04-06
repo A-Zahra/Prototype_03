@@ -12,6 +12,7 @@ public class StartGame : MonoBehaviour
     public void Start()
     {
         GameStats.State = "intro";
+       
     }
     // Update is called once per frame
     private void OnGUI()
@@ -46,32 +47,52 @@ public class StartGame : MonoBehaviour
         Color pink = new Color(250f, 0.5f, 0.5f);
         Color purple = new Color(0.5f, 0.5f, 250f);
         Color orange = new Color(250f, 0.5f, 0.1f);
-        GUI.Label(new Rect((float)Screen.width / 1.54f, Screen.height /11, 150, 20), "Jewels Color Palette", myStyle);
+       
+        GUI.Label(new Rect((float)Screen.width / 1.54f, Screen.height /11, 150, 20), "Jewels Color Guide", myStyle);
 
-        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.54f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.green);
-        GUI.Label(new Rect((float)Screen.width / 1.54f, Screen.height / 3, 150, 20), "Green", myStyle);
-
-        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.4f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.cyan);
-        GUI.Label(new Rect((float)Screen.width / 1.4f, Screen.height / 3, 150, 20), "Blue", myStyle);
-
-        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.28f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.yellow);
-        GUI.Label(new Rect((float)Screen.width / 1.28f, Screen.height / 3, 150, 20), "Yellow", myStyle);
-
+        /*
+        #if UNITY_EDITOR
         EditorGUI.DrawRect(new Rect((float)Screen.width / 1.18f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.red);
+        #endif
         GUI.Label(new Rect((float)Screen.width / 1.18f, Screen.height / 3, 150, 20), "Red", myStyle);
 
-
-        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.54f, (float)Screen.height / 2.5f, (float)Screen.width/ 22, (float)Screen.width/ 22), pink);
-        GUI.Label(new Rect((float)Screen.width / 1.54f, (float)Screen.height / 1.87f, 150, 20), "pink", myStyle);
-
-        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.4f, (float)Screen.height / 2.5f, (float)Screen.width / 22, (float)Screen.width / 22), Color.gray);
-        GUI.Label(new Rect((float)Screen.width / 1.4f, (float)Screen.height / 1.87f, 150, 20), "gray", myStyle);
-
+        #if UNITY_EDITOR
         EditorGUI.DrawRect(new Rect((float)Screen.width / 1.28f, (float)Screen.height / 2.5f, (float)Screen.width / 22, (float)Screen.width / 22), purple);
+        #endif
         GUI.Label(new Rect((float)Screen.width / 1.28f, (float)Screen.height / 1.87f, 150, 20), "purple", myStyle);
 
+        #if UNITY_EDITOR
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.54f, (float)Screen.height / 2.5f, (float)Screen.width / 22, (float)Screen.width / 22), pink);
+        #endif
+        GUI.Label(new Rect((float)Screen.width / 1.54f, (float)Screen.height / 1.87f, 150, 20), "pink", myStyle);
+
+        #if UNITY_EDITOR
         EditorGUI.DrawRect(new Rect((float)Screen.width / 1.18f, (float)Screen.height / 2.5f, (float)Screen.width / 22, (float)Screen.width / 22), orange);
+        #endif
         GUI.Label(new Rect((float)Screen.width / 1.18f, (float)Screen.height / 1.87f, 150, 20), "orange", myStyle);
+
+        #if UNITY_EDITOR
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.54f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.green);
+        #endif
+        GUI.Label(new Rect((float)Screen.width / 1.54f, Screen.height / 3, 150, 20), "Green", myStyle);
+
+        #if UNITY_EDITOR
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.4f, (float)Screen.height / 2.5f, (float)Screen.width / 22, (float)Screen.width / 22), Color.gray);
+        #endif
+        GUI.Label(new Rect((float)Screen.width / 1.4f, (float)Screen.height / 1.87f, 150, 20), "gray", myStyle);
+
+        #if UNITY_EDITOR
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.4f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.cyan);
+        #endif  
+        GUI.Label(new Rect((float)Screen.width / 1.4f, Screen.height / 3, 150, 20), "Blue", myStyle);
+
+        #if UNITY_EDITOR
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.28f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.yellow);
+        #endif
+        GUI.Label(new Rect((float)Screen.width / 1.28f, Screen.height / 3, 150, 20), "Yellow", myStyle);
+
+        */
+
 
 
     }
