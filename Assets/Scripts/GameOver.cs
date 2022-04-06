@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class GameOver : MonoBehaviour
 {
@@ -15,21 +16,16 @@ public class GameOver : MonoBehaviour
     {
         GUIStyle myStyle = new GUIStyle();
         myStyle.normal.textColor = Color.white;
-        myStyle.fontSize = 26;
+        myStyle.fontSize = Screen.width / 55;
 
         GUIStyle buttonStyle = new GUIStyle();
-        buttonStyle.fontSize = (int)(40.0f * ((float)Screen.width / (float)nativeSize.x)); ;
+        buttonStyle.fontSize = Screen.width / 15;
         buttonStyle.normal.textColor = Color.yellow;
 
-        GUI.Label(new Rect(400, 220, 150, 20), "Congratulations!", buttonStyle);
-        GUI.Label((new Rect(570, 370, 200, 100)), counter, myStyle);
-        GUI.Label((new Rect(910, 370, 200, 100)), GameStats.Points.ToString(), myStyle);
+        GUI.Label(new Rect((float)Screen.width / 3.7f, (float)Screen.height/ 3.5f, 150, 20), "Congratulations!", buttonStyle);
+        GUI.Label((new Rect((float)Screen.width / 2.6f, (float)Screen.height / 1.9f, 200, 100)), counter, myStyle);
+        GUI.Label((new Rect((float)Screen.width / 1.6f, (float)Screen.height / 1.9f, 200, 100)), GameStats.Points.ToString(), myStyle);
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -31,6 +31,7 @@ public class CreatingJewels : MonoBehaviour
     }
     void createNewJewels() {
         int cIndex = 0;
+        bool choseColorSwatch = false;
         for (float i = -2.83f; i < 4.83; i = i + 2)
         {
             for (float j = -2.83f; j < 4.83; j = j + 2)
@@ -38,13 +39,20 @@ public class CreatingJewels : MonoBehaviour
                 GameObject theJewel = Instantiate(jewel);
                 theJewel.transform.position = new Vector3(i, 15, j);
                   int index = Random.Range(0, 8);
-                
+                if (choseColorSwatch == false) {
+                    GameStats.colorSwatch = index;
+                    choseColorSwatch = true;
+                }
                     theJewel.GetComponent<Renderer>().material = new Material(test[index]);
+                theJewel.transform.GetChild(0).GetComponent<TextMesh>().text = index.ToString();
 
                 theJewel.GetComponent<Falling>().speed = Random.Range(-0.07f, -0.08f);
                 containers[cIndex].transform.GetChild(1).gameObject.SetActive(true);
                 containers[cIndex].transform.GetChild(1).gameObject.GetComponent<CollectPoints>().isHit = false;
                 containers[cIndex].transform.GetChild(1).gameObject.GetComponent<CollectPoints>().isOpen= false;
+
+                containers[cIndex].transform.GetChild(1).GetChild(0).GetComponent<TextMesh>().text = index.ToString();
+                Debug.Log(containers[cIndex].transform.GetChild(1).GetChild(0));
 
                 if (containers[cIndex].transform.GetChild(1).gameObject.GetComponent<CollectPoints>().wrongHit== false)
                 {
@@ -81,6 +89,7 @@ public class CreatingJewels : MonoBehaviour
                 GameObject theJewelContainer = Instantiate(container);
                 theJewelContainer.transform.position = new Vector3(i, .44f, j);
                 theJewelContainer.transform.GetChild(1).gameObject.GetComponent<CollectPoints>().capId = index;
+                theJewelContainer.transform.GetChild(1).GetChild(0).GetComponent<TextMesh>().text = index.ToString();
              //   Debug.Log(theJewelContainer.transform.GetChild(1).gameObject.GetComponent<CollectPoints>().capId);
 
                 containers[index] = theJewelContainer;

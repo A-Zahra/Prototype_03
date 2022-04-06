@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEditor;
 public class ColorIndicator : MonoBehaviour
 {
     public string[] colorsList = new string[8];
@@ -14,8 +14,6 @@ public class ColorIndicator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-   
         colorsList[0] = "red";
         colorsList[1] = "purple";
         colorsList[2]= "pink";
@@ -36,7 +34,6 @@ public class ColorIndicator : MonoBehaviour
         {
             InvokeRepeating("colorChange", 1f, 5f);
             notStarted = true;
-            //Debug.Log("once");
         }
     }
     private void OnGUI()
@@ -44,19 +41,20 @@ public class ColorIndicator : MonoBehaviour
 
         GUIStyle myStyle = new GUIStyle();
         myStyle.normal.textColor = Color.white;
-        myStyle.fontSize = 25;
+        myStyle.fontSize = Screen.width / 55;
        
-        GUI.Label((new Rect(860, 80, 200, 100)), currentColor, myStyle);
-        GUI.Label((new Rect(600, 80, 200, 100)), counter, myStyle);
-        GUI.Label((new Rect(630, 140, 200, 100)), GameStats.Points.ToString(), myStyle);
+        GUI.Label((new Rect((float)Screen.width / 1.75f , Screen.height / 8, 200, 100)), currentColor, myStyle);
+        GUI.Label((new Rect((float)Screen.width / 2.6f, Screen.height / 8, 200, 100)), counter, myStyle);
+        GUI.Label((new Rect((float)Screen.width / 2.5f, Screen.height / 5, 200, 100)), GameStats.Points.ToString(), myStyle);
 
     }
 
 
     void colorChange() {
-        int index = Random.Range(0, 8);
+        int index = GameStats.colorSwatch;
         currentColor = colorsList[index];
         currentMaterial = boxColors[index];
         GetComponent<Renderer>().material = currentMaterial;
+        transform.GetChild(0).GetComponent<TextMesh>().text = index.ToString();
     }
 }

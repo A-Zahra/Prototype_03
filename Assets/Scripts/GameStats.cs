@@ -8,5 +8,6 @@ public static class GameStats
     public static string State { get; set; }
     public static bool gameOver { get; set; }
     public static int wrongCapTouched { get; set; }
+    public static int colorSwatch { get; set; }
 
 }

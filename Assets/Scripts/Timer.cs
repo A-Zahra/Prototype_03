@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEditor;
 public class Timer : MonoBehaviour
 {
     private float timeLimit = 60.0f;
@@ -42,10 +42,9 @@ public class Timer : MonoBehaviour
     {
         GUIStyle myStyle = new GUIStyle();
         myStyle.normal.textColor = Color.white;
-        myStyle.fontSize = 25;
-        GUI.Label((new Rect(730, 81, 200, 100)), "Timer", myStyle);
-        GUI.Label((new Rect(730, 140, 200, 100)), timerValue.ToString(), myStyle);
-
+        myStyle.fontSize = Screen.width / 55;
+        GUI.Label((new Rect((float)Screen.width / 2.07f, Screen.height / 8, 200, 100)), "Timer", myStyle);
+        GUI.Label((new Rect((float)Screen.width / 2.05f, Screen.height / 5, 200, 100)), timerValue.ToString(), myStyle);
 
     }
 }

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEditor;
+
 
 public class StartGame : MonoBehaviour
 {
@@ -15,31 +17,62 @@ public class StartGame : MonoBehaviour
     private void OnGUI()
     {
         GUIStyle buttonStyle = new GUIStyle();
-        buttonStyle.fontSize = 26;
+        buttonStyle.fontSize = Screen.width / 44;
         buttonStyle.normal.textColor = Color.green;
 
-        if (GUI.Button( new Rect (50, 400, 150, 20), "Load Game!", buttonStyle))
-        {
-            GameStats.State = "play";
-            SceneManager.LoadScene("Game_Level01", LoadSceneMode.Single);
-        }
 
         GUIStyle myStyle = new GUIStyle();
         myStyle.normal.textColor = Color.white;
-        myStyle.fontSize = 20;
-        GUI.Label((new Rect(50, 170, 500, 500)), "INSTRUCTIONS " +
+        myStyle.fontSize = Screen.width / 70;
+        GUI.Label((new Rect(Screen.width/25, Screen.height/4, 500, 500)), "INSTRUCTIONS " +
             "\n 1. To collect jewels, click on the container cap to open. " +
             "\n 2. Only collect the jewels whose color matches the color displayed on the screen. " +
             "\n 3. You will lose the game if you hit three wrong color caps!" +
             "\n 4. Please play this game in 'Maximize on play' mode." +
             "\n 5. Wait for one round of jewels to fall completely" +
             "\n and then click on the caps for the next round." +
-            "\n 6. You have 60 seconds to organize as many jewels as you can.", myStyle);
-       
-        GUI.Label((new Rect(50, 50, 500, 500)), "Game Story" +
+            "\n 6. You have 60 seconds to organize as many jewels as you can." +
+            "\n 7. If you are color blind, ignore the colors and match " +
+            "\n the numbers with the number that is displayed on the screen.", myStyle);
+
+        GUI.Label((new Rect(Screen.width / 25, (float)Screen.height / 1.58f, 500, 500)), "HINT" +
+         "\n Always start with the containers that are further! ", myStyle);
+
+        GUI.Label((new Rect(Screen.width / 25, Screen.height / 14, 500, 500)), "Game Story" +
         "\n Hello! I am a jeweler. I bought a set of new jewels yesterday, " +
         "\n and I need to classify them based on their color. " +
         "\n Can you please help me get this done before my first customer comes into the store?", myStyle);
+
+        Color pink = new Color(250f, 0.5f, 0.5f);
+        Color purple = new Color(0.5f, 0.5f, 250f);
+        Color orange = new Color(250f, 0.5f, 0.1f);
+        GUI.Label(new Rect((float)Screen.width / 1.54f, Screen.height /11, 150, 20), "Jewels Color Palette", myStyle);
+
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.54f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.green);
+        GUI.Label(new Rect((float)Screen.width / 1.54f, Screen.height / 3, 150, 20), "Green", myStyle);
+
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.4f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.cyan);
+        GUI.Label(new Rect((float)Screen.width / 1.4f, Screen.height / 3, 150, 20), "Blue", myStyle);
+
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.28f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.yellow);
+        GUI.Label(new Rect((float)Screen.width / 1.28f, Screen.height / 3, 150, 20), "Yellow", myStyle);
+
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.18f, Screen.height / 5, (float)Screen.width / 22, (float)Screen.width / 22), Color.red);
+        GUI.Label(new Rect((float)Screen.width / 1.18f, Screen.height / 3, 150, 20), "Red", myStyle);
+
+
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.54f, (float)Screen.height / 2.5f, (float)Screen.width/ 22, (float)Screen.width/ 22), pink);
+        GUI.Label(new Rect((float)Screen.width / 1.54f, (float)Screen.height / 1.87f, 150, 20), "pink", myStyle);
+
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.4f, (float)Screen.height / 2.5f, (float)Screen.width / 22, (float)Screen.width / 22), Color.gray);
+        GUI.Label(new Rect((float)Screen.width / 1.4f, (float)Screen.height / 1.87f, 150, 20), "gray", myStyle);
+
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.28f, (float)Screen.height / 2.5f, (float)Screen.width / 22, (float)Screen.width / 22), purple);
+        GUI.Label(new Rect((float)Screen.width / 1.28f, (float)Screen.height / 1.87f, 150, 20), "purple", myStyle);
+
+        EditorGUI.DrawRect(new Rect((float)Screen.width / 1.18f, (float)Screen.height / 2.5f, (float)Screen.width / 22, (float)Screen.width / 22), orange);
+        GUI.Label(new Rect((float)Screen.width / 1.18f, (float)Screen.height / 1.87f, 150, 20), "orange", myStyle);
+
 
     }
 }
